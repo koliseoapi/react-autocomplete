@@ -1,6 +1,6 @@
 {
   "name": "react-async-autocomplete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An autocompleter for React that is prepared for asynchronous behavior",
   "repository": {
     "type": "git",

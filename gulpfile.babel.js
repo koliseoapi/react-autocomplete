@@ -44,7 +44,7 @@ gulp.task('styles', () => {
     ]))
     .pipe($.minifyCss())
     .pipe($.sourcemaps.write('.'))
-    .pipe($.rename('react-rug-menu.css'))
+    .pipe($.rename('react-async-autocomplete.css'))
     .pipe(gulp.dest('build'))
     .pipe($.size({title: 'styles'}));
 });
@@ -59,7 +59,7 @@ gulp.task('scripts', () => {
       .bundle()
 
       .on('error', onError)
-      .pipe(source('react-rug-menu.js'))
+      .pipe(source('react-async-autocomplete.js'))
       .pipe(buffer())
       .pipe($.sourcemaps.init({
         loadMaps: true,
