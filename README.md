@@ -2,7 +2,7 @@
 
 This autocompleter will display options and react to keypress (up, down, enter, esc). Inspired in [React Autocomplete](https://github.com/reactjs/react-autocomplete), but designed for a simplified workflow where requests are expected to be asynchronous (synchronous is supported, but should be less common) and will display a loading icon.
 
-Check the [demo here](icoloma.github.io/react-async-autocomplete).
+Check the [demo here](http://icoloma.github.io/react-async-autocomplete).
 
 ## Use
 
