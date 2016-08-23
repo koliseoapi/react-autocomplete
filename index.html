@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./react-async-autocomplete.css">
+  <link rel="stylesheet" href="./pokesprite/pokesprite.css">
+  <style>
+    body {
+      font: 14px sans-serif;
+      line-height: 1;
+      margin: 0;
+      padding: 20px;
+    }
+    hr {
+      margin: 30px 0;
+      color: #aaa;
+      height: 3px;
+    }
+    input {
+      border-radius: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      color: #333;
+      display: block;
+      margin: 0 10px 0 0;
+      padding: 9px 12px;
+    }
+    .pokemon-container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+    .pokemon-name {
+      margin-left: 5px;
+    }
+    .footnote {
+      color: #888;
+      font-size: 12px;
+    }
+    .footnote > a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <p style="margin: 20px 10px">A test of React Async Autocomplete. <br><a href="https://github.com/icoloma/react-async-autocomplete">Github repository</a>, <a href="https://www.npmjs.com/package/react-async-autocomplete">npm package</a>.
+
+  <h3>Choose your favorite pokemon</h3>
+  <div class="autocomplete-container">
+  </div>
+  <p class="footnote"><a href="https://github.com/msikma/pokesprite">Pokesprite</a> courtesy of Michiel Sikma</p>
+
+  <script src="./test.js"></script>
+</body>
+</html>
