@@ -1,0 +1,93 @@
+$loading-width: 20px;
+$white: #fff;
+$black: #444;
+$grayLight: #ccc;
+$grayLighter: #eee;
+$blue: #0288D1;
+
+// loading indicator. 
+.loading {
+  border: solid 2px #17cae6;
+  border-left-color: transparent;
+  border-radius: 50px;
+  width: $loading-width;
+  height: $loading-width;
+  animation: loading-fadeIn .3s ease-in, loading-spin 1.3s infinite ease-in-out;
+  animation-fill-mode: forwards;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: auto 10px;
+}
+
+@keyframes loading-spin {
+  0%, 5% {
+    transform: rotate(0deg);
+  }
+  95%, 100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Autocomplete list
+.autocomplete { 
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  align-items: center;
+}
+
+.autocomplete-list {
+  position: absolute;
+  z-index: 960;
+  background-color: $white;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 3px;
+  border: 1px solid $grayLight;
+  float: left;
+  top: 2.1rem;
+  left: 0;
+  overflow: auto;
+  max-height: 300px;
+  max-height: 50vh;
+  max-width: 400px;
+  max-width: 70vw;
+}
+
+.autocomplete-li {
+  padding: 8px 15px;
+  max-width: 400px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $grayLighter;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  &.selected {
+    background: $blue;
+    color: $white;
+
+    & a {
+      color: #fff;
+    }
+
+  }
+  
+}
