@@ -6,7 +6,7 @@ Check the [demo here](http://icoloma.github.io/react-async-autocomplete).
 
 ## Use
 
-```
+```jsx
 import Autocomplete from "react-async-autocomplete";
 
 // render one item on the list
