@@ -70,7 +70,7 @@ class MyApp extends React.Component {
       <div>
         <Autocomplete 
           ref="autocomplete"
-          ItemView={PokemonItemView} 
+          renderItem={PokemonItemView} 
           onChange={this.onChange} 
           onSelect={this.onSelect}
         />
