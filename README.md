@@ -10,12 +10,12 @@ Check the [demo here](http://icoloma.github.io/react-async-autocomplete).
 import Autocomplete from "react-async-autocomplete";
 
 // render one item on the list
-const MyItemView = function({ user }) {
+const MyItemView = function({ item }) {
 
   return (
     <div className="user-data">
-      <div>{user.id}</div>
-      <div>{user.name}</div>
+      <div>{item.id}</div>
+      <div>{item.name}</div>
     </div>
   );
 
@@ -58,7 +58,7 @@ class MyApp extends React.Component {
       <div>
         <Autocomplete 
           ref="autocomplete"
-          ItemView={MyItemView} 
+          renderItem={MyItemView} 
           onChange={this.onChange} 
           onSelect={this.onSelect}
         />
