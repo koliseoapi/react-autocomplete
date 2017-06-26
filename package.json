@@ -4,7 +4,7 @@
   "description": "An autocompleter for React that is prepared for asynchronous behavior",
   "repository": {
     "type": "git",
-    "url": "https://github.com/icoloma/react-async-autocomplete"
+    "url": "https://github.com/koliseoapi/react-async-autocomplete"
   },
   "keywords": [
     "react",
@@ -12,7 +12,7 @@
   ],
   "author": "Nacho Coloma <icoloma@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/icoloma/react-async-autocomplete",
+  "homepage": "https://github.com/koliseoapi/react-async-autocomplete",
   "main": "lib/main.js",
   "jsnext:main": "lib/main.js",
   "devDependencies": {
