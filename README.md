@@ -6,7 +6,7 @@ Check the [demo here](http://koliseoapi.github.io/react-async-autocomplete).
 
 ## Use
 
-```jsx
+```js
 import Autocomplete from "react-async-autocomplete";
 
 // render one item on the list
@@ -68,3 +68,14 @@ class MyApp extends React.Component {
 
 };
 ```
+
+## Develop
+
+```bash
+npm i
+
+# to develop
+npm run watch
+```
+
+There is no `build` step. The source is a single file in `lib/index.js`, published "as is".
