@@ -38,7 +38,7 @@ class MyApp extends React.Component {
     
     // you would normally do here your server access
     fetch('/users/search?q=' + query)
-    .then((result) {
+    .then((result) => {
       this.refs.autocomplete.setItems(result.body);
     })
   }
