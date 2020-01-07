@@ -1,19 +1,13 @@
-{ 
-  "presets": [ 
+{
+  "presets": [
     [
       "@babel/env",
       {
         "targets": {
-          "browsers": [
-            "last 2 Chrome versions",
-            "last 2 Firefox versions"
-          ]
+          "browsers": ["last 2 Chrome versions", "last 2 Firefox versions"]
         }
       }
-    ], 
-    "@babel/react" 
-  ],
-  "plugins": [ 
-    "@babel/proposal-object-rest-spread" 
+    ],
+    "@babel/react"
   ]
 }
