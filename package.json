@@ -1,10 +1,10 @@
 {
-  "name": "react-async-autocomplete",
-  "version": "1.1.0",
+  "name": "@koliseoapi/react-autocomplete",
+  "version": "2.0.0",
   "description": "An autocompleter for React with asynchronous behavior",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koliseoapi/react-async-autocomplete"
+    "url": "https://github.com/koliseoapi/react-autocomplete"
   },
   "keywords": [
     "react",
@@ -15,35 +15,32 @@
     "Carlos Coloma <ccescribano@gmail.com"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/koliseoapi/react-async-autocomplete",
+  "homepage": "https://github.com/koliseoapi/react-autocomplete",
   "main": "lib/main.js",
   "jsnext:main": "lib/main.js",
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=2.1.18"
-  },
   "dependencies": {
-    "dom-scroll-into-view": "^1.2.1"
+    "dom-scroll-into-view": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.38",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.38",
-    "@babel/preset-env": "^7.0.0-beta.38",
-    "@babel/preset-react": "^7.0.0-beta.38",
-    "babel-loader": "^8.0.0-beta.0",
-    "http-server": "^0.11.1",
-    "node-sass": "^4.7.2",
-    "npm-run-all": "^4.1.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "webpack": "^3.10.0"
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "http-server": "^0.12.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sass": "^1.24.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
     "postversion": "git push && git push --tags",
     "watch:webpack": "NODE_ENV=development webpack --watch --config webpack.config.js",
-    "watch:css": "inotifywait -m -r -e close_write,create,delete ./scss/ | while read NEWFILE; do node-sass --output-style compressed ./scss/main.scss > ./build/react-async-autocomplete.css; done",
+    "watch:css": "sass --watch scss/main.scss build/react-autocomplete.css",
     "watch:local-server": "xdg-open http://127.0.0.1:8080/test/ && http-server -s -c-1 .",
     "watch": "npm-run-all --parallel watch:**",
-    "build": "NODE_ENV=production webpack --config webpack.config.js && node-sass --output-style compressed ./scss/main.scss > ./build/react-async-autocomplete.css"
+    "build": "NODE_ENV=production webpack --config webpack.config.js && sass --style compressed ./scss/main.scss build/react-autocomplete.css"
   }
 }
